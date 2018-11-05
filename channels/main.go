@@ -57,9 +57,9 @@ func printUsers(ch chan user, wg *sync.WaitGroup) {
 		// fmt.Printf("User: name=%s, age=%d", u.name, u.age)
 		raw, err := json.Marshal(u)
 		if err != nil {
-			fmt.Printf("error=%s", err.Error())
+			fmt.Printf("error=%s\n", err.Error())
 		} else {
-			fmt.Printf("User json: %s", string(raw))
+			fmt.Printf("User json: %s\n", string(raw))
 		}
 
 		// us := User{}
